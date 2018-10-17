@@ -1,0 +1,3 @@
+No good regex exists for extracting URLs.
+
+Parenthesis matching by Gruber will go into catastrophic backtracking; see examples.

@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en_EN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!--
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2009 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.com/ and http://typo3.org/
+	-->
+	<base href="http://www.eventcompany.dk/" />
+	<link rel="stylesheet" type="text/css" href="typo3temp/stylesheet_63510e194e.css" />
+	<link rel="stylesheet" type="text/css" href="fileadmin/template/css/main.css" />
+	<title>Billedgalleri</title>
+	<meta name="title" content="Billedgalleri" />
+	<meta name="date" content="2009-11-04" />
+	<meta name="verify-v1" content="s0+RLMgXBmQF4gbKa2xkRNOFtAmhUxp2fOD7Hg9KeRQ=" />
+	<meta name="generator" content="TYPO3 4.2 CMS" />
+	<script type="text/javascript" src="typo3temp/javascript_a708894199.js"></script>
+	<script src="typo3conf/ext/rgsmoothgallery/res/scripts/mootools.js" type="text/javascript"></script>
+	<script src="typo3conf/ext/rgsmoothgallery/res/scripts/jd.gallery1010.js" type="text/javascript"></script>
+	<script src="typo3conf/ext/rgsmoothgallery/res/scripts/slightbox107.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="typo3conf/ext/rgsmoothgallery/res/css/jd.gallery.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="typo3conf/ext/rgsmoothgallery/res/css/slightbox.css" type="text/css" media="screen" />
+	<style type="text/css">
+	/*<![CDATA[*/
+	<!--
+	#myGallery45 {width:460px;height:345px;}#myGallery45 a {color:#FFFFFF;text-decoration:none;}#myGallery45 a:link {color:#FFFFFF;text-decoration:none;}#myGallery45 a:visited {color:#FFFFFF;text-decoration:none;}#myGallery45 a:hover {color:#FFFFFF;text-decoration:none;} .rgsgnest45 { width:460px;height:345px; }
+	// -->
+	/*]]>*/
+	</style>
+</head>
+<body><script type="text/javascript">
+	//<![CDATA[
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write("\<script src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'>\<\/script>" );
+	//]]>
+	</script>
+	<script type="text/javascript">
+	//<![CDATA[
+	var pageTracker = _gat._getTracker("UA-385299-1");
+	pageTracker._initData();
+	//]]>
+	</script>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" id="wrapper">
+	<tr>
+	<td valign="top" width="50%">&nbsp;</td>
+	<td valign="top" width="33" class="left_repeat"><!--###left_repeat### begin -->
+	<div id="logo"><a href="en/" ><img src="fileadmin/template/images/logo.gif" width="33" height="228" border="0" alt="" title="Home" /></a></div>
+	<!--###left_repeat### end --></td>
+	<td valign="top" width="855" class="main_bg"><!--###main_bg### begin -->
+	<div id="top_wrap"><!--###top_wrap### begin -->
+		<div id="billede_baggrund"><a id="c1"></a><img src="uploads/pics/top_billede.png" width="782" height="229" border="0" alt="" title="" /></div>
+		<div id="topMenu"><div id="menu1_allwrap"><div class="menu1"><a href="en/" title="Forside"  >Forside</a></div><div class="menu1"><a href="en/event-hos-os/" title="Event hos os"  >Event hos os</a></div><div class="menu1"><a href="en/leje-af-udstyr/" title="Leje af udstyr"  >Leje af udstyr</a></div><div class="menu1"><a href="en/temafest/" title="Temafest"  >Temafest</a></div><div class="menu1"><a href="en/priser/" title="Priser"  >Priser</a></div><div class="menu1"><a href="en/nyhed/" title="Nyhed"  >Nyhed</a></div><div class="menu1"><a href="en/faq/" title="FAQ"  >FAQ</a></div><div class="menu1"><a href="en/om-os/" title="Om os"  >Om os</a></div><div class="menu1"><a href="en/kontakt/" title="Kontakt"  >Kontakt</a></div><div class="menu1"><a href="en/booking/" title="Booking"  >Booking</a></div></div></div>
+			<div id="main_top"><!--###main_top### begin -->
+				<table border="0" cellspacing="0" cellpadding="0">
+				<tr>
+				<td id="language_menu"><a id="c10"></a><div class="tx-srlanguagemenu-pi1">
+				<div class="CUR"><a href="billedgalleri/"><img src="typo3conf/ext/sr_language_menu/flags/da.gif" title="Dansk" alt="Dansk" class="tx-srlanguagemenu-pi1-flag" /></a></div>
+				<div class="INACT"><img src="typo3conf/ext/sr_language_menu/flags/en_d.gif" title="English" alt="English" class="tx-srlanguagemenu-pi1-flag" /></div>
+			</div>
+			</td>
+			<td id="print"><a href="en/billedgalleri/?type=98" onclick="window.open('http://www.eventcompany.dk/en/billedgalleri/?type=98','printwindow','(resizable=yes,toolbar=no,scrollbars=yes,menubar=yes,width=800,height=600)');return false;" title="Print this page" onfocus="blurLink(this);"><img src="/fileadmin/template/images/print.gif" alt="Print this page" title="Print this page" border="0" rel="nofollow" /></a></td>
+			<td id="sitemap"><a href="en/sitemap/" ><img src="fileadmin/template/images/sitemap.gif" width="17" height="12" border="0" alt="" title="Sitemap" /></a></td>
+			<td id="soeg"><form action="/en/search/" method="post"><input type="image" src="/fileadmin/template/images/search.gif" title="Search" />&nbsp;&nbsp;<input type="text" name="tx_indexedsearch[sword]" value="" title="Type your search word and press search" class="soeg_felt" /><input type="hidden" name="tx_indexedsearch[_sections]" value="0" /><input type="hidden" name="tx_indexedsearch[pointer]" value="0" /><input type="hidden" name="tx_indexedsearch[ext]" value="0" /><input type="hidden" name="tx_indexedsearch[lang]" value="1" /></form></td>
+			</tr>
+			</table>
+		<!--###main_top### end --></div>
+	<!--###top_wrap### end --></div>
+	<div id="main_middle"><!--###main_middle### begin -->
+		<div id="main_middle_left"><!--###main_middle_left### begin -->
+			<div id="venstreMenu"></div>
+			<div id="venstreMenu_spacer"><!--###venstreMenu_spacer### begin -->&nbsp;<!--###venstreMenu_spacer### end --></div>
+			<div id="ring_mig_op_genvej"><a href="en/ringtilos/" ><img src="fileadmin/template/images/ring-mig-op.jpg" width="136" height="20" border="0" alt="" title="Call me about events" /></a></div>
+			<div id="billeder_genvej"><a href="en/billedgalleri/" ><img src="fileadmin/template/images/billeder.jpg" width="136" height="20" border="0" alt="" title="Galleri" /></a></div>
+			<div id="booking_genvej"><a href="en/booking/" ><img src="fileadmin/template/images/booking.jpg" width="136" height="20" border="0" alt="" title="Booking" /></a></div>
+		<!--###main_middle_left### end --></div>
+		<div id="main_middle_wide"><!--###main_middle_wide### begin -->
+			<!-- TYPO3_SEARCH begin -->
+			<div id="content"><a id="c45"></a><div class="csc-header csc-header-n1"><div class="overskrift">Galleri</div></div><div class="tx-rgsmoothgallery-pi1 rgsgnest45">
+				<script type="text/javascript">
+				function startGallery45() {
+				if(window.gallery45)
+				{
+				try
+				{
+				var myGallery45 = new gallery($('myGallery45'), {
+				timed:true,delay: 6000,
+				showArrows: true,
+				showCarousel: true,
+				textShowCarousel: 'Pictures',
+				embedLinks:true,
+				lightbox:true
+				});
+				var mylightbox = new Lightbox();
+				}catch(error){
+				window.setTimeout("startGallery45();",2500);
+				}
+				}else{
+				window.gallery45=true;
+				if(this.ie)
+				{
+				window.setTimeout("startGallery45();",3000);
+				}else{
+				window.setTimeout("startGallery45();",100);
+				}
+				}
+				}
+				window.onDomReady(startGallery45);
+				</script><noscript>
+				<div class="rgsgcontent"><div class="myGallery-NoScript" id="myGallery-NoScript45"><div class="rgsg-btn" style="display:none">00</div><img src="fileadmin/root/billedgallerier/galleri/kvinde_sang_hoereboeffer.jpg" class="full" /></div></div>
+				</noscript><div class="rgsgcontent"><div class="myGallery" id="myGallery45"><div class="rgsg-btn" style="display:none">00</div>
+				<div class="imageElement"><a href="typo3temp/pics/74cbdbf3f7.jpg" title="Open Image" class="open"></a>
+					<img src="typo3temp/pics/7228bb6c80.jpg" class="full" />
+					<img src="typo3temp/pics/27b42de24a.jpg" class="thumbnail" />
+				</div>
+				<div class="imageElement"><a href="fileadmin/root/billedgallerier/galleri/kvinde_sang_hoereboeffer.jpg" title="Open Image" class="open"></a>
+					<img src="fileadmin/root/billedgallerier/galleri/kvinde_sang_hoereboeffer.jpg" class="full" />
+					<img src="typo3temp/pics/822f2a9d1e.jpg" class="thumbnail" />
+				</div>
+				<div class="imageElement"><a href="typo3temp/pics/01c3d03e36.jpg" title="Open Image" class="open"></a>
+					<img src="typo3temp/pics/8a80063214.jpg" class="full" />
+					<img src="typo3temp/pics/3f46e23c71.jpg" class="thumbnail" />
+				</div>
+				<div class="imageElement"><a href="typo3temp/pics/e4059ea01a.jpg" title="Open Image" class="open"></a>
+					<img src="typo3temp/pics/c601ad3ba5.jpg" class="full" />
+					<img src="typo3temp/pics/5d83a6f33f.jpg" class="thumbnail" />
+				</div>
+				<div class="imageElement"><a href="typo3temp/pics/36df7557a3.jpg" title="Open Image" class="open"></a>
+					<img src="typo3temp/pics/da8ca8e735.jpg" class="full" />
+					<img src="typo3temp/pics/af1096e6af.jpg" class="thumbnail" />
+				</div>
+				<div class="imageElement"><a href="fileadmin/root/billedgallerier/galleri/sumo_1_lofter_ben.jpg" title="Open Image" class="open"></a>
+					<img src="typo3temp/pics/1dac7681c0.jpg" class="full" />
+					<img src="typo3temp/pics/efd447c8cf.jpg" class="thumbnail" />
+				</div></div></div></div><div id="externalthumbs"></div></div>
+				<!-- TYPO3_SEARCH end -->
+			<!--###main_middle_wide### end --></div>
+			<div class="clear"><!--###clear### begin --><!--###clear### end --></div>
+		<!--###main_middle### end --></div>
+		<!--###main_bg### end --></td>
+		<td valign="top" width="62" class="right_repeat"><!--###right_repeat### begin -->
+		<div id="ikon_wrap"><!--###ikon_wrap### begin -->
+			<div id="profil"><a href="en/om-os/" ><img src="fileadmin/template/images/profil.gif" width="13" height="15" border="0" alt="" title="Profile" /></a></div>
+			<div id="galleri"><a href="en/billedgalleri/" ><img src="fileadmin/template/images/galleri.gif" width="14" height="15" border="0" alt="" title="Gallery" /></a></div>
+			<div id="booking"><a href="en/booking/" ><img src="fileadmin/template/images/booking.gif" width="14" height="15" border="0" alt="" title="Booking" /></a></div>
+		<!--###ikon_wrap### end --></div>
+		<!--###right_repeat### end --></td>
+		<td valign="top" width="50%">&nbsp;</td>
+		</tr>
+		<tr>
+		<td valign="top" height="136" width="50%" class="bund_repeat"><!--###bund_repeat### begin -->&nbsp;<!--###bund_repeat### end --></td>
+		<td valign="top" height="136" width="33" class="left_repeat"><!--###left_repeat### begin -->&nbsp;<!--###left_repeat### end --></td>
+		<td valign="top" height="136" width="855" class="bund_bg"><!--###bund_bg### begin -->
+		<div id="quicklinks"><a id="c20"></a><div class="tx-quicklinks-pi1">
+			<div class="tx-quicklinks-pi1-listrow">
+				<div class="quicklink_header">Om os og vores events</div>
+				<div class="quicklink"><a href="en/booking/" target="_self" title="Booking">Booking</a></div>
+				<div class="quicklink"><a href="en/ringtilos/" target="_self" title="Vil du gerne ringes op og fÃ¥ forklaret hvad vi kan tilbyde dig?">Ring mig op formular</a></div>
+				<div class="quicklink"><a href="en/billedgalleri/" target="_self" title="Billedgalleri med billeder fra bl.a. tidligere events">Billedgalleri</a></div>
+			</div>
+		</div>
+	</div>
+	<div id="latestnews">
+		<table cellpadding="0" cellspacing="0" border="0" width="272">
+		<tr>
+		<td valign="top" class="latestnews_img">
+		<a href="en/nyheder/firmafester-og-events/?tx_ttnews%5BbackPid%5D=47&amp;cHash=a2bde2788e" title=""><img src="typo3temp/pics/cacf363e60.gif" width="90" height="51" border="0" alt="Super sjove events til firmafest" title="Sjove events til firmafest og firmaevent. God rÃ¥dgivning." /></a>
+		</td>
+		<td valign="top" class="latestnews_text">
+	<a href="en/nyheder/firmafester-og-events/?tx_ttnews%5BbackPid%5D=47&amp;cHash=a2bde2788e" title=""><div class="latestnews_headline">Firmafester og events</div>
+	<p class="bodytext">Eventcompany kan lave sjove events for dig og dit firma. Vi har stor erfaring me...</p> </a>
+	</td>
+	</tr>
+	</table>
+</div>
+<!--###bund_bg### end --></td>
+<td valign="top" height="136" width="62" class="right_repeat"><!--###right_repeat### begin --><img src="/fileadmin/template/images/right_repeat_top.gif" width="62" height="1" alt="" /><!--###right_repeat### end --></td>
+<td valign="top" height="136" width="50%" class="bund_repeat"><!--###bund_repeat### begin -->&nbsp;<!--###bund_repeat### end --></td>
+</tr>
+</table>
+<script type="text/javascript">
+//<![CDATA[
+pageTracker._trackPageview();
+//]]>
+</script>
+</body>
+</html>

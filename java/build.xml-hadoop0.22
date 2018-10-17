@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+
+<project name="isi" default="compile" xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+
+  <!-- default property names -->
+  <property file="${user.home}/build.properties" />
+  <property file="${basedir}/build.properties" />
+  <property name="Name" value="isi"/>
+  <property name="name" value="isi"/>
+  <property name="version" value="0.1"/>
+  <property name="final.name" value="${name}-${version}"/>  
+
+  <property name="main-class" value="isi.Test" />
+ 
+  <!-- path -->
+  <property name="src.dir" value="${basedir}/src"/>
+  <property name="lib.dir" value="${basedir}/lib"/>
+
+  <property name="build.dir" value="${basedir}/build"/>
+  <property name="build.native" value="${basedir}/build"/>
+  <property name="build.classes" value="${build.dir}/classes"/>
+  <property name="build.src" value="${build.dir}/src"/>
+  <property name="build.tools.dir" location="${build.dir}/tools"/>
+  <property name="build.lib.dir" location="${build.dir}/lib"/>
+  <property name="build.test.dir" location="${build.dir}/test"/>
+  <property name="thrift.src" value="${build.dir}/gen-java"/>
+  <property name="build.webapps" value="${build.dir}/webapps"/>
+  <property name="build.anttasks" value="${build.dir}/ant"/>
+  <!-- convert spaces to _ so that mac os doesn't break things -->
+  <exec executable="sed" inputstring="${os.name}" 
+        outputproperty="nonspace.os">
+    <arg value="s/ /_/g"/>
+  </exec>
+  <property name="build.platform" 
+            value="${nonspace.os}-${os.arch}-${sun.arch.data.model}"/>
+
+  <property name="build.native" value="${build.dir}/native/${build.platform}"/>
+   
+  <property name="build.encoding" value="ISO-8859-1"/>   <!-- utf8? -->
+  <property name="dist.dir" value="${build.dir}/${final.name}"/>
+  
+  <property name="javac.debug" value="on"/>
+  <property name="javac.optimize" value="on"/>
+  <property name="javac.deprecation" value="off"/>
+  <!--property name="javac.version" value="1.6"/-->
+  <property name="javac.version" value="1.6"/>
+  <property name="javac.args" value=""/>
+  <property name="javac.args.warnings" value=""/>
+
+  <!-- native make support -->
+  <property name="make.cmd" value="make"/>
+  <property name="native.src.dir" value="${basedir}/src/native"/>
+
+  <!-- we don't need ant libraries in our classpath -->
+  <presetdef name="javac">
+    <javac includeantruntime="false" />
+  </presetdef>
+
+  <!-- the normal classpath -->
+  <echo message="Processing Class Path"/>
+  <path id="classpath">
+	  <!-- add class files -->	
+    <pathelement location="${build.classes}"/>
+	  <!-- stuff in lib -->	
+	  <fileset dir="${lib.dir}">
+        <include name="*.jar" />
+        <include name="**/*.jar" />
+    </fileset>
+
+	  <!-- stuff in build.lib -->	
+    <fileset dir="${build.lib.dir}">
+      <include name="*.jar" />
+	    <exclude name="servlet-api-2.5-6.1.14.jar"/>
+	    <exclude name="servlet-api-2.5.jar"/>
+    </fileset>
+
+    <!-- hadoop stuff -->
+    <fileset dir="${hadoop.path}">
+      <!-- for our hadoop 0.22 -->
+      <include name="common/build/*.jar"/>
+      <include name="hdfs/build/*.jar"/>
+      <include name="mapred/build/*.jar"/>
+      <include name="lib/*.jar"/>
+      <!-- default -->
+      <include name="lib/**/*.jar"/>
+      <include name="hadoop-core*.jar"/>
+      <exclude name="lib/jets3t-*.jar"/>
+    </fileset>
+  </path>
+
+  <!-- // Initialize -->
+  <target name="init">
+    <echo message="Initializing directories"/>
+    <tstamp/>
+    <mkdir dir="${build.dir}"/>
+    <mkdir dir="${build.classes}"/>
+    <mkdir dir="${build.src}"/>
+    <mkdir dir="${build.lib.dir}"/>
+    <mkdir dir="${build.tools.dir}"/>
+    <mkdir dir="${build.test.dir}"/>
+  </target>
+
+  <!-- ================================================================== -->
+  <!-- Clean.  Delete the build files, and their directories              -->
+  <!-- ================================================================== -->
+  <target name="clean">
+	  <echo message="Processing Clean Target"/>                                        
+    <delete dir="build"/>
+  </target>
+
+  <!-- ====================================================== -->
+  <!-- Compile the Java files                                 -->
+  <!-- ====================================================== -->
+  <target name="compile-core" depends="init">
+  <echo message="Processing Compile Core Classes Target"/>                
+  
+    <!-- Compile Java files (excluding JSPs) checking warnings -->
+    <javac 
+           encoding="${build.encoding}" 
+           srcdir="${src.dir};${build.src}"
+           includes="**/*.java" 
+           excludes=""
+           destdir="${build.classes}"
+           debug="${javac.debug}"
+           optimize="${javac.optimize}"
+           target="${javac.version}"
+           source="${javac.version}"
+		       includeantruntime="no"
+           deprecation="${javac.deprecation}" >
+      <compilerarg line="${javac.args} ${javac.args.warnings}" />
+      <classpath refid="classpath"/>
+    </javac>   
+
+    <copy todir="${build.classes}">
+      <fileset 
+               dir="${src.dir}" 
+               includes="**/*.properties"
+               />
+    </copy>
+  </target>
+
+  <target name="compile" depends="init,compile-core,jar">
+	<echo message="Processing Compile Target"/>                        
+  </target>    
+
+
+  <target name="jar" depends="compile-core">
+	  <echo message="Processing Jar Target"/>                        
+    <jar jarfile="${build.dir}/${final.name}.jar" basedir="${build.classes}" duplicate="preserve">
+      <manifest>
+        <!--attribute name="Main-Class" value="${main-class}"/-->
+      </manifest>
+      <zipfileset dir="${lib.dir}" prefix="lib" >
+        <include name="*.jar" />
+      </zipfileset>
+      <zipfileset dir="${build.lib.dir}" prefix="lib" >
+        <include name="*.jar" />
+	      <exclude name="servlet-api-2.5-6.1.14.jar"/>
+	      <exclude name="servlet-api-2.5.jar"/>
+      </zipfileset>
+    </jar>
+  </target>
+
+  <echo message="Done Processing Targets"/>    
+</project>
